@@ -3,7 +3,7 @@ from utils import add_years_to_date
 
 class SpindlerBattery(Battery):
     def __init__(self, current_date, last_service_date):
-        super(current_date, last_service_date).__init__()
+        super().__init__(current_date, last_service_date)
         self.threshold = 2
     
     def needs_service(self):

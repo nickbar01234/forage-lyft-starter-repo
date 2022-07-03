@@ -3,7 +3,7 @@ from utils import add_years_to_date
 
 class NubbinBattery(Battery):
     def __init__(self, current_date, last_service_date):
-        super(current_date, last_service_date).__init__()
+        super().__init__(current_date, last_service_date)
         self.threshold = 4
     
     def needs_service(self):
